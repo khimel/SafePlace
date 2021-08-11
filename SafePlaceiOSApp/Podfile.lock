@@ -1,0 +1,20 @@
+PODS:
+  - AzureNotificationHubs-iOS (3.1.3)
+  - SwiftSignalRClient (0.8.0)
+
+DEPENDENCIES:
+  - AzureNotificationHubs-iOS
+  - SwiftSignalRClient
+
+SPEC REPOS:
+  trunk:
+    - AzureNotificationHubs-iOS
+    - SwiftSignalRClient
+
+SPEC CHECKSUMS:
+  AzureNotificationHubs-iOS: 2070251bcc9cefa888b436a5b023a7375ae823f4
+  SwiftSignalRClient: fcdfa9141dd191b5c219df87adbfc58f6f1f5554
+
+PODFILE CHECKSUM: 875f6641febf0e305b99ec2d66155cc29d0f76e4
+
+COCOAPODS: 1.10.1

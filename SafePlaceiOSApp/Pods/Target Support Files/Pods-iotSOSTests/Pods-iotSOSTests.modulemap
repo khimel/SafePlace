@@ -1,0 +1,6 @@
+framework module Pods_iotSOSTests {
+  umbrella header "Pods-iotSOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

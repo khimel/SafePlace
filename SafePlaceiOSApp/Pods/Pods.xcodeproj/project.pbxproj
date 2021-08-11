@@ -1,0 +1,1222 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		94B19CFF3F45E4C53080761DD484DD29 /* AzureNotificationHubs-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CC023EED68EC2B346725DAE910C934E1 /* Build configuration list for PBXAggregateTarget "AzureNotificationHubs-iOS" */;
+			buildPhases = (
+				19F937ED0D044FA39B73B3638B36F4EE /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "AzureNotificationHubs-iOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		039086E05B37AC7226916D7503A2FF12 /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620BD48B078B168C11997B4B39AE493 /* NegotiationResponse.swift */; };
+		07FC6C1A78DA24C362C0497839C82F02 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AFECEC624B75707899939B07B0DFD /* ConnectionDelegate.swift */; };
+		0EE250280E0BCD29DD408740183E00B9 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB349F1DF45D99EB28AA5B560749477D /* Transport.swift */; };
+		13FC76EFE8772AF2CD292704D26AAF5A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3E527E5A378F49E9D2234A249E0CF /* WebSocket.swift */; };
+		28CC25836CA48C053F29AFFD089EDF66 /* HttpConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52912E54D585824C82E97F496F22E04B /* HttpConnectionOptions.swift */; };
+		2F87AE6FB673822078F3F82C590380CF /* SwiftSignalRClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D13780F800D7C72F76EFC493479C1F92 /* SwiftSignalRClient-dummy.m */; };
+		3EB0269974A240A03F0D085876B10682 /* ServerInvocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6693E361A7DBC746A882FC7C72F5B /* ServerInvocationHandler.swift */; };
+		40B12E6F5BF7E160332BBB8059B48D01 /* HandshakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F980BF7427EBEDD5D9496A883C767 /* HandshakeProtocol.swift */; };
+		452BCDF80DC8760B4066E79EDD7B0924 /* Pods-iotSOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C3292B9AD2F90FF89FEF28E9FA074 /* Pods-iotSOSTests-dummy.m */; };
+		4531605D8C9DC63EAE5CA7404BED62F1 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B9A82615295CE0D56493196787703 /* HttpClientProtocol.swift */; };
+		4817FF68C49B067D279B05BE981C78E2 /* StreamHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888874E33DFE776FA956BBE873EB89DC /* StreamHandle.swift */; };
+		5ADF5F0B566DE76CFE3AF9D4E8438746 /* Pods-iotSOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9719A4D27334D5A0F49CA39BB2D05A54 /* Pods-iotSOS-dummy.m */; };
+		66CD2125A3E04F04093BBC69C6915BE2 /* TransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A150420453F6493AB9F8B45F91E01 /* TransportDelegate.swift */; };
+		672C03ABBB7E426919E20116739B395C /* DefaultTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD2984385020ED4215AF80C44A83F /* DefaultTransportFactory.swift */; };
+		6E555A82BD95230FEA424BE470479BBB /* JSONHubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057F567CCF0BC0D1CE8EFCB25D0CD56 /* JSONHubProtocol.swift */; };
+		72B20C1836150DCEEA2AEF9D8C4E38FD /* CodableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BB03A893AC23E4A9D8398959B1087 /* CodableHelpers.swift */; };
+		740E534C19F1676720487673DD060B60 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA9877ECD848B18B41B33BA49983ED /* TransportType.swift */; };
+		87E5C9EF41F9B5D08DD86F5DAC4CC958 /* SwiftSignalRClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A27024BD63C771C2871AAA7EF448B5 /* SwiftSignalRClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94110701A25BD134F941005F95833C72 /* HubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A47D35F5F00F3FC260CD4606370D05 /* HubProtocol.swift */; };
+		9434BC9346450A3AC1EFD20787C28446 /* HubConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384B6BE4C331989168EB17E737C04CC /* HubConnectionExtensions.swift */; };
+		94A3433E2560A2BCE3067C232A2A01C2 /* SignalRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929039C69C984AC15A235E3B5A9B0836 /* SignalRError.swift */; };
+		9904291F9C5A587C0E14F12B6D55E6B0 /* Pods-iotSOS-iotSOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C22EF8074DD146F0460F54B3184A7B /* Pods-iotSOS-iotSOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0FF4AF1281E0BDF23094C701615985 /* DefaultHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EB29268CA7A70C6678BA627C8C3F6 /* DefaultHttpClient.swift */; };
+		9F4D16F4E8C4088BD28B8D5F862BE2FF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EA6B2C3BA45591050A2C1F77CB477 /* Logger.swift */; };
+		A59F6A9540F2C61408891F48C6E43B0B /* ReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FC60F7ABFAC26CA8DA8670B238CA8 /* ReconnectPolicy.swift */; };
+		AA87584523CA2705CB5B98E1426F0E07 /* WebsocketsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598759C8FE92FB75984635350D09EE6F /* WebsocketsTransport.swift */; };
+		AF873A762EC15B9CC7D58AC3276EB73B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B2E7EDD03F63DE43C932C893F8856CA2 /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFAFCA32E872ADB74AD7049F7CB6AF /* HubConnection.swift */; };
+		B5F36538A1E49069B06226668D16C295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BD5EE099543764B437E5DC42B11661D5 /* HubConnectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094ABD9FE63C61F8B7767D773C32A813 /* HubConnectionBuilder.swift */; };
+		C73790DC97D8B08E2F84113ABC4C7422 /* HubConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97FE84BD7A6273BCC9FCFD9F5D896B /* HubConnectionDelegate.swift */; };
+		C7B27557B7AED8733A2ACA7A69DBC12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D835C31CC1F8E06CC1653CBF9DA04D7C /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102EA4BE3BE25138B2544A95E6B2FB7 /* HttpResponse.swift */; };
+		D8D6D13A3EA179A1202390E76568CB01 /* Pods-iotSOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 193914C581C0DB565437FAC7DC9CE98D /* Pods-iotSOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB4FCA025545405331D82EDCA1BCC186 /* TransferFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E64754CEF5B14C96EBDEB950E89C1A /* TransferFormat.swift */; };
+		E3B5C9ECA6D9DF21254EA6F508C4C922 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE5E440177D5951CB29AED15384225 /* Util.swift */; };
+		E76C21FE055104D67A7D679F43612B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F13A3C3015B6EC0DABC8AD9DB0042BBA /* Pods-iotSOS-iotSOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1786B540692931D84233F8FC3CC0514F /* Pods-iotSOS-iotSOSUITests-dummy.m */; };
+		F219C5988E31C18C3C7F2E55110E97EB /* LongPollingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F12CC6C274477F0171F839715004EA /* LongPollingTransport.swift */; };
+		F27BB20FBCD978D186A9CD9E54ABAC4E /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78591586EDC7676144C686294B8DA801 /* HttpConnection.swift */; };
+		F2ABDE9AB2F4FF4A860AC696F78913AF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6A47328EAE44C03D88E58EA91304F /* Connection.swift */; };
+		F3D5A304A0944B3D491206D234FADED8 /* ReconnectableConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C56C3DF7EDAEC4C5286BD7FB335CA /* ReconnectableConnection.swift */; };
+		FC7AA24FACC4494E8B0FF1443E6F5C7E /* Pods-iotSOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A12248C8092C0FD6F273CE51AB44E6F /* Pods-iotSOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD746AD22254114335FC40DA7AAF907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E4305FE3DB5C15280454075D66A637;
+			remoteInfo = "Pods-iotSOS";
+		};
+		6D67FD90D0E28F83E2605E2697AEDEFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B19CFF3F45E4C53080761DD484DD29;
+			remoteInfo = "AzureNotificationHubs-iOS";
+		};
+		80BC808DF54D233C9A7A88B6D73A2A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
+			remoteInfo = SwiftSignalRClient;
+		};
+		C3C4BFB6647A1CFBA8375F4FBFD65B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B19CFF3F45E4C53080761DD484DD29;
+			remoteInfo = "AzureNotificationHubs-iOS";
+		};
+		FA5314D57C06D83AC4AE964E027C6F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
+			remoteInfo = SwiftSignalRClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AA9877ECD848B18B41B33BA49983ED /* TransportType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportType.swift; path = Sources/SignalRClient/TransportType.swift; sourceTree = "<group>"; };
+		079C3292B9AD2F90FF89FEF28E9FA074 /* Pods-iotSOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iotSOSTests-dummy.m"; sourceTree = "<group>"; };
+		094ABD9FE63C61F8B7767D773C32A813 /* HubConnectionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionBuilder.swift; path = Sources/SignalRClient/HubConnectionBuilder.swift; sourceTree = "<group>"; };
+		09A27024BD63C771C2871AAA7EF448B5 /* SwiftSignalRClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-umbrella.h"; sourceTree = "<group>"; };
+		1786B540692931D84233F8FC3CC0514F /* Pods-iotSOS-iotSOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iotSOS-iotSOSUITests-dummy.m"; sourceTree = "<group>"; };
+		193914C581C0DB565437FAC7DC9CE98D /* Pods-iotSOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iotSOSTests-umbrella.h"; sourceTree = "<group>"; };
+		1BE9FEE3E2A5D8D4F75C91917485B798 /* Pods-iotSOS-iotSOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOS-iotSOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2500A026C293F3EFF416ED7FD4E88A7B /* SwiftSignalRClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSignalRClient-Info.plist"; sourceTree = "<group>"; };
+		2CB35C01FFB4987B1B90560C2E694FD5 /* Pods-iotSOS-iotSOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iotSOS-iotSOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		338AFECEC624B75707899939B07B0DFD /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = Sources/SignalRClient/ConnectionDelegate.swift; sourceTree = "<group>"; };
+		35C1AADA040007ACDC829804141C0E08 /* Pods-iotSOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		377F980BF7427EBEDD5D9496A883C767 /* HandshakeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandshakeProtocol.swift; path = Sources/SignalRClient/HandshakeProtocol.swift; sourceTree = "<group>"; };
+		3CCAD2984385020ED4215AF80C44A83F /* DefaultTransportFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTransportFactory.swift; path = Sources/SignalRClient/DefaultTransportFactory.swift; sourceTree = "<group>"; };
+		52912E54D585824C82E97F496F22E04B /* HttpConnectionOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnectionOptions.swift; path = Sources/SignalRClient/HttpConnectionOptions.swift; sourceTree = "<group>"; };
+		530C56C3DF7EDAEC4C5286BD7FB335CA /* ReconnectableConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectableConnection.swift; path = Sources/SignalRClient/ReconnectableConnection.swift; sourceTree = "<group>"; };
+		598759C8FE92FB75984635350D09EE6F /* WebsocketsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebsocketsTransport.swift; path = Sources/SignalRClient/WebsocketsTransport.swift; sourceTree = "<group>"; };
+		59F12CC6C274477F0171F839715004EA /* LongPollingTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPollingTransport.swift; path = Sources/SignalRClient/LongPollingTransport.swift; sourceTree = "<group>"; };
+		5B6EB29268CA7A70C6678BA627C8C3F6 /* DefaultHttpClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultHttpClient.swift; path = Sources/SignalRClient/DefaultHttpClient.swift; sourceTree = "<group>"; };
+		5CF91131B55E1DEBF5553176DD58591D /* Pods-iotSOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iotSOSTests.modulemap"; sourceTree = "<group>"; };
+		5F4D3459ABE79BB491B60B26B2A38E43 /* Pods-iotSOS-iotSOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOS-iotSOSUITests-Info.plist"; sourceTree = "<group>"; };
+		65A47D35F5F00F3FC260CD4606370D05 /* HubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProtocol.swift; path = Sources/SignalRClient/HubProtocol.swift; sourceTree = "<group>"; };
+		66754A404F6BD98BD4D87EFFFCA56A67 /* Pods_iotSOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iotSOS.framework; path = "Pods-iotSOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688FC60F7ABFAC26CA8DA8670B238CA8 /* ReconnectPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReconnectPolicy.swift; path = Sources/SignalRClient/ReconnectPolicy.swift; sourceTree = "<group>"; };
+		6A12248C8092C0FD6F273CE51AB44E6F /* Pods-iotSOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iotSOS-umbrella.h"; sourceTree = "<group>"; };
+		6A714BDA95967DC3BF0754C660355E2F /* AzureNotificationHubs-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AzureNotificationHubs-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6C97D4DA17DBF22AEE0163A908E0580F /* Pods-iotSOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iotSOS-frameworks.sh"; sourceTree = "<group>"; };
+		7057F567CCF0BC0D1CE8EFCB25D0CD56 /* JSONHubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHubProtocol.swift; path = Sources/SignalRClient/JSONHubProtocol.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78591586EDC7676144C686294B8DA801 /* HttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnection.swift; path = Sources/SignalRClient/HttpConnection.swift; sourceTree = "<group>"; };
+		7D0EEA0FA21DFA079F9148852134B1BA /* AzureNotificationHubs-iOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AzureNotificationHubs-iOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		7D7E6A55646FDCA2739FBBCE15EFB1D2 /* Pods-iotSOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E27959DDB9E101713D4B727996EDE07 /* Pods-iotSOS-iotSOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOS-iotSOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		849B9A82615295CE0D56493196787703 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpClientProtocol.swift; path = Sources/SignalRClient/HttpClientProtocol.swift; sourceTree = "<group>"; };
+		888874E33DFE776FA956BBE873EB89DC /* StreamHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHandle.swift; path = Sources/SignalRClient/StreamHandle.swift; sourceTree = "<group>"; };
+		8FD6A47328EAE44C03D88E58EA91304F /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SignalRClient/Connection.swift; sourceTree = "<group>"; };
+		929039C69C984AC15A235E3B5A9B0836 /* SignalRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalRError.swift; path = Sources/SignalRClient/SignalRError.swift; sourceTree = "<group>"; };
+		932BB03A893AC23E4A9D8398959B1087 /* CodableHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableHelpers.swift; path = Sources/SignalRClient/CodableHelpers.swift; sourceTree = "<group>"; };
+		94720407741081DAF4DBEA5B9FE025FE /* Pods_iotSOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iotSOSTests.framework; path = "Pods-iotSOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9494169DFF105061B27CE2F29515E3C1 /* SwiftSignalRClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSignalRClient.modulemap; sourceTree = "<group>"; };
+		957EA6B2C3BA45591050A2C1F77CB477 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/SignalRClient/Logger.swift; sourceTree = "<group>"; };
+		9620BD48B078B168C11997B4B39AE493 /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = Sources/SignalRClient/NegotiationResponse.swift; sourceTree = "<group>"; };
+		9719A4D27334D5A0F49CA39BB2D05A54 /* Pods-iotSOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iotSOS-dummy.m"; sourceTree = "<group>"; };
+		999A150420453F6493AB9F8B45F91E01 /* TransportDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportDelegate.swift; path = Sources/SignalRClient/TransportDelegate.swift; sourceTree = "<group>"; };
+		9A1B019B8CDBCE642E67FA3A27942DD9 /* Pods-iotSOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A43E9020FBD0C614EAC365CC96614C3F /* Pods-iotSOS-iotSOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOS-iotSOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABDEE81F413475DE77AF9934581CFCF3 /* AzureNotificationHubs-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AzureNotificationHubs-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B40D52C7C5664F4E2908DE21D422FE13 /* SwiftSignalRClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.debug.xcconfig; sourceTree = "<group>"; };
+		B8D01D8254AB49F36B9B00324984449F /* Pods-iotSOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOS-Info.plist"; sourceTree = "<group>"; };
+		BBF994841C9F5F84A8381477417BDE57 /* SwiftSignalRClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.release.xcconfig; sourceTree = "<group>"; };
+		C2BE5E440177D5951CB29AED15384225 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/SignalRClient/Util.swift; sourceTree = "<group>"; };
+		C5FCE156F256B6A186F379F28B61EB4A /* Pods-iotSOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iotSOS.modulemap"; sourceTree = "<group>"; };
+		CD1EBEC28CF49B8E291DDA9400645462 /* Pods-iotSOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOSTests-Info.plist"; sourceTree = "<group>"; };
+		CE2AF3487A4DAB8B252735E2E37BAFA0 /* Pods-iotSOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iotSOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		D102EA4BE3BE25138B2544A95E6B2FB7 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/SignalRClient/HttpResponse.swift; sourceTree = "<group>"; };
+		D13780F800D7C72F76EFC493479C1F92 /* SwiftSignalRClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSignalRClient-dummy.m"; sourceTree = "<group>"; };
+		D384B6BE4C331989168EB17E737C04CC /* HubConnectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionExtensions.swift; path = Sources/SignalRClient/HubConnectionExtensions.swift; sourceTree = "<group>"; };
+		D419371E154974B057DE9DBE9EB9C091 /* Pods-iotSOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iotSOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA66B92594D71521DD302F7614D8AD64 /* Pods-iotSOS-iotSOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iotSOS-iotSOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DB349F1DF45D99EB28AA5B560749477D /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/SignalRClient/Transport.swift; sourceTree = "<group>"; };
+		DB97FE84BD7A6273BCC9FCFD9F5D896B /* HubConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionDelegate.swift; path = Sources/SignalRClient/HubConnectionDelegate.swift; sourceTree = "<group>"; };
+		E1C9491A2016CA88EAC394916E47805F /* Pods_iotSOS_iotSOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iotSOS_iotSOSUITests.framework; path = "Pods-iotSOS-iotSOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32B88F973703947BED70EE9238C4080 /* Pods-iotSOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOS.release.xcconfig"; sourceTree = "<group>"; };
+		E4879827FD3CA081E01BA702DD4452D5 /* SwiftSignalRClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-prefix.pch"; sourceTree = "<group>"; };
+		E6D6693E361A7DBC746A882FC7C72F5B /* ServerInvocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerInvocationHandler.swift; path = Sources/SignalRClient/ServerInvocationHandler.swift; sourceTree = "<group>"; };
+		E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSignalRClient.framework; path = SwiftSignalRClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4EBB13A407F3F17B2D8A5864879B0D /* Pods-iotSOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iotSOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0E64754CEF5B14C96EBDEB950E89C1A /* TransferFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransferFormat.swift; path = Sources/SignalRClient/TransferFormat.swift; sourceTree = "<group>"; };
+		F2C22EF8074DD146F0460F54B3184A7B /* Pods-iotSOS-iotSOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iotSOS-iotSOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		F5BAB443DC58DF6C9C90CD7C71BE9940 /* Pods-iotSOS-iotSOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iotSOS-iotSOSUITests.modulemap"; sourceTree = "<group>"; };
+		F76976A25D487A51472F5C3B7023F117 /* Pods-iotSOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iotSOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7CFAFCA32E872ADB74AD7049F7CB6AF /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = Sources/SignalRClient/HubConnection.swift; sourceTree = "<group>"; };
+		FDC3E527E5A378F49E9D2234A249E0CF /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/SignalRClient/WebSocket.swift; sourceTree = "<group>"; };
+		FEC2220C9184A90393CAF496A085A914 /* WindowsAzureMessaging.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = WindowsAzureMessaging.xcframework; path = "WindowsAzureMessaging-SDK-Apple/WindowsAzureMessaging.xcframework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D39262FF92EC502DCD797E718288C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F36538A1E49069B06226668D16C295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350C9CF835D1F5578E9DA58E226AD37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B27557B7AED8733A2ACA7A69DBC12C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CF86C8876D09EC87847F5131C2258C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF873A762EC15B9CC7D58AC3276EB73B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD56FED0C7AF0FBECB32951871CAA6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76C21FE055104D67A7D679F43612B44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AFF51485DBCB8A5A86BE4CEFEBCFD53 /* SwiftSignalRClient */ = {
+			isa = PBXGroup;
+			children = (
+				932BB03A893AC23E4A9D8398959B1087 /* CodableHelpers.swift */,
+				8FD6A47328EAE44C03D88E58EA91304F /* Connection.swift */,
+				338AFECEC624B75707899939B07B0DFD /* ConnectionDelegate.swift */,
+				5B6EB29268CA7A70C6678BA627C8C3F6 /* DefaultHttpClient.swift */,
+				3CCAD2984385020ED4215AF80C44A83F /* DefaultTransportFactory.swift */,
+				377F980BF7427EBEDD5D9496A883C767 /* HandshakeProtocol.swift */,
+				849B9A82615295CE0D56493196787703 /* HttpClientProtocol.swift */,
+				78591586EDC7676144C686294B8DA801 /* HttpConnection.swift */,
+				52912E54D585824C82E97F496F22E04B /* HttpConnectionOptions.swift */,
+				D102EA4BE3BE25138B2544A95E6B2FB7 /* HttpResponse.swift */,
+				F7CFAFCA32E872ADB74AD7049F7CB6AF /* HubConnection.swift */,
+				094ABD9FE63C61F8B7767D773C32A813 /* HubConnectionBuilder.swift */,
+				DB97FE84BD7A6273BCC9FCFD9F5D896B /* HubConnectionDelegate.swift */,
+				D384B6BE4C331989168EB17E737C04CC /* HubConnectionExtensions.swift */,
+				65A47D35F5F00F3FC260CD4606370D05 /* HubProtocol.swift */,
+				7057F567CCF0BC0D1CE8EFCB25D0CD56 /* JSONHubProtocol.swift */,
+				957EA6B2C3BA45591050A2C1F77CB477 /* Logger.swift */,
+				59F12CC6C274477F0171F839715004EA /* LongPollingTransport.swift */,
+				9620BD48B078B168C11997B4B39AE493 /* NegotiationResponse.swift */,
+				530C56C3DF7EDAEC4C5286BD7FB335CA /* ReconnectableConnection.swift */,
+				688FC60F7ABFAC26CA8DA8670B238CA8 /* ReconnectPolicy.swift */,
+				E6D6693E361A7DBC746A882FC7C72F5B /* ServerInvocationHandler.swift */,
+				929039C69C984AC15A235E3B5A9B0836 /* SignalRError.swift */,
+				888874E33DFE776FA956BBE873EB89DC /* StreamHandle.swift */,
+				F0E64754CEF5B14C96EBDEB950E89C1A /* TransferFormat.swift */,
+				DB349F1DF45D99EB28AA5B560749477D /* Transport.swift */,
+				999A150420453F6493AB9F8B45F91E01 /* TransportDelegate.swift */,
+				00AA9877ECD848B18B41B33BA49983ED /* TransportType.swift */,
+				C2BE5E440177D5951CB29AED15384225 /* Util.swift */,
+				FDC3E527E5A378F49E9D2234A249E0CF /* WebSocket.swift */,
+				598759C8FE92FB75984635350D09EE6F /* WebsocketsTransport.swift */,
+				277C30A47340C7CA3A1F858344CAF9A4 /* Support Files */,
+			);
+			name = SwiftSignalRClient;
+			path = SwiftSignalRClient;
+			sourceTree = "<group>";
+		};
+		2515648E757DEF6230FC2A6D1FDB1A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66754A404F6BD98BD4D87EFFFCA56A67 /* Pods_iotSOS.framework */,
+				E1C9491A2016CA88EAC394916E47805F /* Pods_iotSOS_iotSOSUITests.framework */,
+				94720407741081DAF4DBEA5B9FE025FE /* Pods_iotSOSTests.framework */,
+				E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277C30A47340C7CA3A1F858344CAF9A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9494169DFF105061B27CE2F29515E3C1 /* SwiftSignalRClient.modulemap */,
+				D13780F800D7C72F76EFC493479C1F92 /* SwiftSignalRClient-dummy.m */,
+				2500A026C293F3EFF416ED7FD4E88A7B /* SwiftSignalRClient-Info.plist */,
+				E4879827FD3CA081E01BA702DD4452D5 /* SwiftSignalRClient-prefix.pch */,
+				09A27024BD63C771C2871AAA7EF448B5 /* SwiftSignalRClient-umbrella.h */,
+				B40D52C7C5664F4E2908DE21D422FE13 /* SwiftSignalRClient.debug.xcconfig */,
+				BBF994841C9F5F84A8381477417BDE57 /* SwiftSignalRClient.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSignalRClient";
+			sourceTree = "<group>";
+		};
+		403A2269F4A9ABF2C0C8D8D93758502D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94E8EAE07EA66EEAE72077A09F39D0AD /* AzureNotificationHubs-iOS */,
+				1AFF51485DBCB8A5A86BE4CEFEBCFD53 /* SwiftSignalRClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49626766B74684020758E8CEA0820D1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ECC06A049935778F249E5EC9E628DC4 /* Pods-iotSOS */,
+				BF371E4ACDF6F0D9382ABE89B567774D /* Pods-iotSOS-iotSOSUITests */,
+				C3D6A03B36C1EED1B126EF86FAEB8F44 /* Pods-iotSOSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4ECC06A049935778F249E5EC9E628DC4 /* Pods-iotSOS */ = {
+			isa = PBXGroup;
+			children = (
+				C5FCE156F256B6A186F379F28B61EB4A /* Pods-iotSOS.modulemap */,
+				EA4EBB13A407F3F17B2D8A5864879B0D /* Pods-iotSOS-acknowledgements.markdown */,
+				CE2AF3487A4DAB8B252735E2E37BAFA0 /* Pods-iotSOS-acknowledgements.plist */,
+				9719A4D27334D5A0F49CA39BB2D05A54 /* Pods-iotSOS-dummy.m */,
+				6C97D4DA17DBF22AEE0163A908E0580F /* Pods-iotSOS-frameworks.sh */,
+				B8D01D8254AB49F36B9B00324984449F /* Pods-iotSOS-Info.plist */,
+				6A12248C8092C0FD6F273CE51AB44E6F /* Pods-iotSOS-umbrella.h */,
+				9A1B019B8CDBCE642E67FA3A27942DD9 /* Pods-iotSOS.debug.xcconfig */,
+				E32B88F973703947BED70EE9238C4080 /* Pods-iotSOS.release.xcconfig */,
+			);
+			name = "Pods-iotSOS";
+			path = "Target Support Files/Pods-iotSOS";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5D03C921904A13A509AE6251F53A119D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEC2220C9184A90393CAF496A085A914 /* WindowsAzureMessaging.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94E8EAE07EA66EEAE72077A09F39D0AD /* AzureNotificationHubs-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D03C921904A13A509AE6251F53A119D /* Frameworks */,
+				A1A306FD83B7F8902589EE00C08B9445 /* Support Files */,
+			);
+			name = "AzureNotificationHubs-iOS";
+			path = "AzureNotificationHubs-iOS";
+			sourceTree = "<group>";
+		};
+		A1A306FD83B7F8902589EE00C08B9445 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D0EEA0FA21DFA079F9148852134B1BA /* AzureNotificationHubs-iOS-xcframeworks.sh */,
+				ABDEE81F413475DE77AF9934581CFCF3 /* AzureNotificationHubs-iOS.debug.xcconfig */,
+				6A714BDA95967DC3BF0754C660355E2F /* AzureNotificationHubs-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AzureNotificationHubs-iOS";
+			sourceTree = "<group>";
+		};
+		BF371E4ACDF6F0D9382ABE89B567774D /* Pods-iotSOS-iotSOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5BAB443DC58DF6C9C90CD7C71BE9940 /* Pods-iotSOS-iotSOSUITests.modulemap */,
+				2CB35C01FFB4987B1B90560C2E694FD5 /* Pods-iotSOS-iotSOSUITests-acknowledgements.markdown */,
+				7E27959DDB9E101713D4B727996EDE07 /* Pods-iotSOS-iotSOSUITests-acknowledgements.plist */,
+				1786B540692931D84233F8FC3CC0514F /* Pods-iotSOS-iotSOSUITests-dummy.m */,
+				DA66B92594D71521DD302F7614D8AD64 /* Pods-iotSOS-iotSOSUITests-frameworks.sh */,
+				5F4D3459ABE79BB491B60B26B2A38E43 /* Pods-iotSOS-iotSOSUITests-Info.plist */,
+				F2C22EF8074DD146F0460F54B3184A7B /* Pods-iotSOS-iotSOSUITests-umbrella.h */,
+				A43E9020FBD0C614EAC365CC96614C3F /* Pods-iotSOS-iotSOSUITests.debug.xcconfig */,
+				1BE9FEE3E2A5D8D4F75C91917485B798 /* Pods-iotSOS-iotSOSUITests.release.xcconfig */,
+			);
+			name = "Pods-iotSOS-iotSOSUITests";
+			path = "Target Support Files/Pods-iotSOS-iotSOSUITests";
+			sourceTree = "<group>";
+		};
+		C3D6A03B36C1EED1B126EF86FAEB8F44 /* Pods-iotSOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CF91131B55E1DEBF5553176DD58591D /* Pods-iotSOSTests.modulemap */,
+				D419371E154974B057DE9DBE9EB9C091 /* Pods-iotSOSTests-acknowledgements.markdown */,
+				35C1AADA040007ACDC829804141C0E08 /* Pods-iotSOSTests-acknowledgements.plist */,
+				079C3292B9AD2F90FF89FEF28E9FA074 /* Pods-iotSOSTests-dummy.m */,
+				CD1EBEC28CF49B8E291DDA9400645462 /* Pods-iotSOSTests-Info.plist */,
+				193914C581C0DB565437FAC7DC9CE98D /* Pods-iotSOSTests-umbrella.h */,
+				F76976A25D487A51472F5C3B7023F117 /* Pods-iotSOSTests.debug.xcconfig */,
+				7D7E6A55646FDCA2739FBBCE15EFB1D2 /* Pods-iotSOSTests.release.xcconfig */,
+			);
+			name = "Pods-iotSOSTests";
+			path = "Target Support Files/Pods-iotSOSTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				403A2269F4A9ABF2C0C8D8D93758502D /* Pods */,
+				2515648E757DEF6230FC2A6D1FDB1A2C /* Products */,
+				49626766B74684020758E8CEA0820D1F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		272DA8E1DB8A429950C063CABD365C0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6D13A3EA179A1202390E76568CB01 /* Pods-iotSOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3C51BEECF8154A493872F3AEFCF133 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E5C9EF41F9B5D08DD86F5DAC4CC958 /* SwiftSignalRClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3FEC7995E938BB8DBFFD262AECB6D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7AA24FACC4494E8B0FF1443E6F5C7E /* Pods-iotSOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67129EA1E3736622BA458B0E96A1E00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9904291F9C5A587C0E14F12B6D55E6B0 /* Pods-iotSOS-iotSOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41E4305FE3DB5C15280454075D66A637 /* Pods-iotSOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C076A6BCC2613DEF5178CC6F1D753BEB /* Build configuration list for PBXNativeTarget "Pods-iotSOS" */;
+			buildPhases = (
+				4D3FEC7995E938BB8DBFFD262AECB6D0 /* Headers */,
+				348127A55CC3D5F9E06A7CBD9E999B98 /* Sources */,
+				350C9CF835D1F5578E9DA58E226AD37A /* Frameworks */,
+				4CEED29F9824D08CF4EEE60755B2DE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CA374ABA0F45F249648423FCCF3F1EE /* PBXTargetDependency */,
+				AD487A959175740AA2D7A2CE81CA5710 /* PBXTargetDependency */,
+			);
+			name = "Pods-iotSOS";
+			productName = "Pods-iotSOS";
+			productReference = 66754A404F6BD98BD4D87EFFFCA56A67 /* Pods_iotSOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B1C1CDA952039EFFEF5CB7801F5504D /* Pods-iotSOS-iotSOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E423492858711B8AED42931323A571AE /* Build configuration list for PBXNativeTarget "Pods-iotSOS-iotSOSUITests" */;
+			buildPhases = (
+				E67129EA1E3736622BA458B0E96A1E00 /* Headers */,
+				B29EBD57EBCCF0AECF32B9A27915BC5B /* Sources */,
+				DD56FED0C7AF0FBECB32951871CAA6F8 /* Frameworks */,
+				A57E48AD66DD44D56D91FD6AB78CBE31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40095B879CF2EA348ADC25D537DCAC07 /* PBXTargetDependency */,
+				B03C9822887E7B6702E90F79A782EA7E /* PBXTargetDependency */,
+			);
+			name = "Pods-iotSOS-iotSOSUITests";
+			productName = "Pods-iotSOS-iotSOSUITests";
+			productReference = E1C9491A2016CA88EAC394916E47805F /* Pods_iotSOS_iotSOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166D1AC46B1AF8200083D5D5AF7EFCBF /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */;
+			buildPhases = (
+				2A3C51BEECF8154A493872F3AEFCF133 /* Headers */,
+				A50C68624F0D287302B7C426A3CB2AEB /* Sources */,
+				53CF86C8876D09EC87847F5131C2258C /* Frameworks */,
+				E51D0236185FB78D5143CA1CAC2BE267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSignalRClient;
+			productName = SwiftSignalRClient;
+			productReference = E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE517FD0A250258B804446D037E5A0C7 /* Pods-iotSOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10D3A1D395FF09365673B1491C5339F /* Build configuration list for PBXNativeTarget "Pods-iotSOSTests" */;
+			buildPhases = (
+				272DA8E1DB8A429950C063CABD365C0A /* Headers */,
+				32B583373186BDB610EFAED5E1418044 /* Sources */,
+				0D39262FF92EC502DCD797E718288C9A /* Frameworks */,
+				42D1611CDF19767102F77BD0967F7CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E95271DF85E0170C1EAB547F325516 /* PBXTargetDependency */,
+			);
+			name = "Pods-iotSOSTests";
+			productName = "Pods-iotSOSTests";
+			productReference = 94720407741081DAF4DBEA5B9FE025FE /* Pods_iotSOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2515648E757DEF6230FC2A6D1FDB1A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94B19CFF3F45E4C53080761DD484DD29 /* AzureNotificationHubs-iOS */,
+				41E4305FE3DB5C15280454075D66A637 /* Pods-iotSOS */,
+				4B1C1CDA952039EFFEF5CB7801F5504D /* Pods-iotSOS-iotSOSUITests */,
+				CE517FD0A250258B804446D037E5A0C7 /* Pods-iotSOSTests */,
+				C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42D1611CDF19767102F77BD0967F7CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CEED29F9824D08CF4EEE60755B2DE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57E48AD66DD44D56D91FD6AB78CBE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E51D0236185FB78D5143CA1CAC2BE267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19F937ED0D044FA39B73B3638B36F4EE /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AzureNotificationHubs-iOS/AzureNotificationHubs-iOS-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AzureNotificationHubs-iOS/AzureNotificationHubs-iOS-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AzureNotificationHubs-iOS/AzureNotificationHubs-iOS-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B583373186BDB610EFAED5E1418044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452BCDF80DC8760B4066E79EDD7B0924 /* Pods-iotSOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348127A55CC3D5F9E06A7CBD9E999B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADF5F0B566DE76CFE3AF9D4E8438746 /* Pods-iotSOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50C68624F0D287302B7C426A3CB2AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B20C1836150DCEEA2AEF9D8C4E38FD /* CodableHelpers.swift in Sources */,
+				F2ABDE9AB2F4FF4A860AC696F78913AF /* Connection.swift in Sources */,
+				07FC6C1A78DA24C362C0497839C82F02 /* ConnectionDelegate.swift in Sources */,
+				9B0FF4AF1281E0BDF23094C701615985 /* DefaultHttpClient.swift in Sources */,
+				672C03ABBB7E426919E20116739B395C /* DefaultTransportFactory.swift in Sources */,
+				40B12E6F5BF7E160332BBB8059B48D01 /* HandshakeProtocol.swift in Sources */,
+				4531605D8C9DC63EAE5CA7404BED62F1 /* HttpClientProtocol.swift in Sources */,
+				F27BB20FBCD978D186A9CD9E54ABAC4E /* HttpConnection.swift in Sources */,
+				28CC25836CA48C053F29AFFD089EDF66 /* HttpConnectionOptions.swift in Sources */,
+				D835C31CC1F8E06CC1653CBF9DA04D7C /* HttpResponse.swift in Sources */,
+				B2E7EDD03F63DE43C932C893F8856CA2 /* HubConnection.swift in Sources */,
+				BD5EE099543764B437E5DC42B11661D5 /* HubConnectionBuilder.swift in Sources */,
+				C73790DC97D8B08E2F84113ABC4C7422 /* HubConnectionDelegate.swift in Sources */,
+				9434BC9346450A3AC1EFD20787C28446 /* HubConnectionExtensions.swift in Sources */,
+				94110701A25BD134F941005F95833C72 /* HubProtocol.swift in Sources */,
+				6E555A82BD95230FEA424BE470479BBB /* JSONHubProtocol.swift in Sources */,
+				9F4D16F4E8C4088BD28B8D5F862BE2FF /* Logger.swift in Sources */,
+				F219C5988E31C18C3C7F2E55110E97EB /* LongPollingTransport.swift in Sources */,
+				039086E05B37AC7226916D7503A2FF12 /* NegotiationResponse.swift in Sources */,
+				F3D5A304A0944B3D491206D234FADED8 /* ReconnectableConnection.swift in Sources */,
+				A59F6A9540F2C61408891F48C6E43B0B /* ReconnectPolicy.swift in Sources */,
+				3EB0269974A240A03F0D085876B10682 /* ServerInvocationHandler.swift in Sources */,
+				94A3433E2560A2BCE3067C232A2A01C2 /* SignalRError.swift in Sources */,
+				4817FF68C49B067D279B05BE981C78E2 /* StreamHandle.swift in Sources */,
+				2F87AE6FB673822078F3F82C590380CF /* SwiftSignalRClient-dummy.m in Sources */,
+				DB4FCA025545405331D82EDCA1BCC186 /* TransferFormat.swift in Sources */,
+				0EE250280E0BCD29DD408740183E00B9 /* Transport.swift in Sources */,
+				66CD2125A3E04F04093BBC69C6915BE2 /* TransportDelegate.swift in Sources */,
+				740E534C19F1676720487673DD060B60 /* TransportType.swift in Sources */,
+				E3B5C9ECA6D9DF21254EA6F508C4C922 /* Util.swift in Sources */,
+				13FC76EFE8772AF2CD292704D26AAF5A /* WebSocket.swift in Sources */,
+				AA87584523CA2705CB5B98E1426F0E07 /* WebsocketsTransport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29EBD57EBCCF0AECF32B9A27915BC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13A3C3015B6EC0DABC8AD9DB0042BBA /* Pods-iotSOS-iotSOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CA374ABA0F45F249648423FCCF3F1EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AzureNotificationHubs-iOS";
+			target = 94B19CFF3F45E4C53080761DD484DD29 /* AzureNotificationHubs-iOS */;
+			targetProxy = C3C4BFB6647A1CFBA8375F4FBFD65B07 /* PBXContainerItemProxy */;
+		};
+		40095B879CF2EA348ADC25D537DCAC07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AzureNotificationHubs-iOS";
+			target = 94B19CFF3F45E4C53080761DD484DD29 /* AzureNotificationHubs-iOS */;
+			targetProxy = 6D67FD90D0E28F83E2605E2697AEDEFB /* PBXContainerItemProxy */;
+		};
+		96E95271DF85E0170C1EAB547F325516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iotSOS";
+			target = 41E4305FE3DB5C15280454075D66A637 /* Pods-iotSOS */;
+			targetProxy = 1DD746AD22254114335FC40DA7AAF907 /* PBXContainerItemProxy */;
+		};
+		AD487A959175740AA2D7A2CE81CA5710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSignalRClient;
+			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
+			targetProxy = 80BC808DF54D233C9A7A88B6D73A2A9A /* PBXContainerItemProxy */;
+		};
+		B03C9822887E7B6702E90F79A782EA7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSignalRClient;
+			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
+			targetProxy = FA5314D57C06D83AC4AE964E027C6F4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		085109168E81CEF45D0F6475B7DEE49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A714BDA95967DC3BF0754C660355E2F /* AzureNotificationHubs-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A22E8D6E4D794CE9725B2D4F78700C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43E9020FBD0C614EAC365CC96614C3F /* Pods-iotSOS-iotSOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOS-iotSOSUITests/Pods-iotSOS-iotSOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOS-iotSOSUITests/Pods-iotSOS-iotSOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32FABD8B9D65F6D9FD8DB032E2297153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32B88F973703947BED70EE9238C4080 /* Pods-iotSOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOS/Pods-iotSOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOS/Pods-iotSOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4DD45139B2103F83B6F4B5A461799982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF994841C9F5F84A8381477417BDE57 /* SwiftSignalRClient.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSignalRClient;
+				PRODUCT_NAME = SwiftSignalRClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		92E1C492E5E9DE3DDFF105280F20CE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABDEE81F413475DE77AF9934581CFCF3 /* AzureNotificationHubs-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5FDD908640A0B4EDD09551CDE9B12F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40D52C7C5664F4E2908DE21D422FE13 /* SwiftSignalRClient.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSignalRClient;
+				PRODUCT_NAME = SwiftSignalRClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C405327E42EF341CA23BB2149F5D30B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7E6A55646FDCA2739FBBCE15EFB1D2 /* Pods-iotSOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOSTests/Pods-iotSOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOSTests/Pods-iotSOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC160F07B8A404DA5B630640F0610AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1B019B8CDBCE642E67FA3A27942DD9 /* Pods-iotSOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOS/Pods-iotSOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOS/Pods-iotSOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1D45917885A4300E53D4C61446FAA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE9FEE3E2A5D8D4F75C91917485B798 /* Pods-iotSOS-iotSOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOS-iotSOSUITests/Pods-iotSOS-iotSOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOS-iotSOSUITests/Pods-iotSOS-iotSOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE58469FF8DB77AC59C90303FFFFF53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76976A25D487A51472F5C3B7023F117 /* Pods-iotSOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iotSOSTests/Pods-iotSOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iotSOSTests/Pods-iotSOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		166D1AC46B1AF8200083D5D5AF7EFCBF /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FDD908640A0B4EDD09551CDE9B12F2 /* Debug */,
+				4DD45139B2103F83B6F4B5A461799982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10D3A1D395FF09365673B1491C5339F /* Build configuration list for PBXNativeTarget "Pods-iotSOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE58469FF8DB77AC59C90303FFFFF53C /* Debug */,
+				C405327E42EF341CA23BB2149F5D30B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C076A6BCC2613DEF5178CC6F1D753BEB /* Build configuration list for PBXNativeTarget "Pods-iotSOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC160F07B8A404DA5B630640F0610AAF /* Debug */,
+				32FABD8B9D65F6D9FD8DB032E2297153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC023EED68EC2B346725DAE910C934E1 /* Build configuration list for PBXAggregateTarget "AzureNotificationHubs-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E1C492E5E9DE3DDFF105280F20CE1A /* Debug */,
+				085109168E81CEF45D0F6475B7DEE49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E423492858711B8AED42931323A571AE /* Build configuration list for PBXNativeTarget "Pods-iotSOS-iotSOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A22E8D6E4D794CE9725B2D4F78700C7 /* Debug */,
+				E1D45917885A4300E53D4C61446FAA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

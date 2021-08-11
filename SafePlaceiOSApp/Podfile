@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iotSOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SwiftSignalRClient'
+  pod 'AzureNotificationHubs-iOS'
+
+  # Pods for iotSOS
+
+  target 'iotSOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iotSOSUITests' do
+    # Pods for testing
+  end
+
+end
