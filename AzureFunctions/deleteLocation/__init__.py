@@ -13,22 +13,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     req_body = req.get_json() ## req_body has username
     usernameJson = json.loads(str(req_body).replace("'","\""))
     username_given = usernameJson['username']
-    print(username_given)
-    tableService.delete_entity('locations', str(username_given), str(username_given))
-    print("Inserted location")
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
 
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+    tableService.delete_entity('locations', str(username_given), str(username_given))
+
+    return func.HttpResponse(
+             "This HTTP triggered function executed successfully.",
              status_code=200
         )

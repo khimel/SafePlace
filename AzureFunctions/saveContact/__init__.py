@@ -1,5 +1,4 @@
 import logging
-
 import azure.functions as func
 from azure.cosmosdb.table.tableservice import TableService
 from azure.cosmosdb.table.models import Entity
@@ -15,35 +14,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     contactName = givenJson['name']
     contactEmail = givenJson['email']
 
-    print(username_given)
-    print(contactName)
-    print(contactEmail)
-
-    # counterEntity = dict(tableService.get_entity("contacts", "PKcounter", "RKcounter"))
-    # counter = int(counterEntity["counter"])
-    # counter += 1
-    # counterEntity["counter"] = str(counter)
-    
-    # tableService.update_entity("contacts", counterEntity)
-    print("hi")
     task = {'PartitionKey': str(username_given), 'RowKey': str(contactName), 'email': str(contactEmail)}
     tableService.insert_entity("contacts", task)
 
-
-
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+    return func.HttpResponse(
+             "This HTTP triggered function executed successfully.",
              status_code=200
         )

@@ -20,9 +20,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             password_found = task.password
             foundUser.append({"username":task.RowKey, "name":task.name, "phone": task.phone})
     
-    print(f'found: {password_found}')
-    print(f'given: {password_given}')
-    print(foundUser)
     if password_found == password_given:
         return func.HttpResponse(
             json.dumps(foundUser),

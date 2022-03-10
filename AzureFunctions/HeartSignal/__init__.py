@@ -17,7 +17,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     username_given = usernameJson['username']
     name_given = usernameJson['name']
     phone_given = usernameJson['phone']
-    print(username_given)
+
+
     
     tasks = tableService.query_entities("contacts", filter=f"PartitionKey eq '{username_given}'")
     foundContacts = []

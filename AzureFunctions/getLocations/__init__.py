@@ -1,10 +1,8 @@
 import logging
-
 import azure.functions as func
 from azure.cosmosdb.table.tableservice import TableService
 from azure.cosmosdb.table.models import Entity
 import json
-
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
@@ -14,25 +12,13 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     for task in tasks:
         if task is not None:
             foundLocations.append({"username":task.RowKey, "longitude": task.longitude, "latitude": task.latitude, "name":task.name, "phone": task.phone})
-    print(foundLocations)
     if len(foundLocations) != 0:
         return func.HttpResponse(
             json.dumps(foundLocations),
              status_code=200
         )
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
 
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+    return func.HttpResponse(
+             "This HTTP triggered function executed successfully.",
              status_code=200
-        )
+    )

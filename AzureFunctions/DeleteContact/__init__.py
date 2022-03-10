@@ -14,24 +14,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     username_given = givenJson['username']
     contactName = givenJson['name']
  
-    print(username_given)
-    print(contactName)
-    print("hi delete")
     tableService.delete_entity('contacts', str(username_given), str(contactName))
 
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+    return func.HttpResponse(
+             "This HTTP triggered function executed successfully.",
              status_code=200
         )
