@@ -25,7 +25,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     for task in tasks:
         if task is not None:
             foundContacts.append({"name":task.RowKey, "email": task.email})
-    print(foundContacts)
+
     value = f"Hey Can you please check on {username_given}?"
     for c in foundContacts:
         message = Mail(
@@ -33,13 +33,11 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             to_emails=c["email"],
             subject='SOS',
             html_content=f'Hey, Can you please check on {name_given}? Try calling on: {phone_given}')
-        try:
-            sg = SendGridAPIClient("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")
-            response = sg.send(message)
-            print(response.status_code)
-            print(response.body)
-            print(response.headers)
-        except Exception as e:
-            print(e.message)
+        # try:
+        #     # sg = SendGridAPIClient("")
+        #     # response = sg.send(message)
+
+        # except Exception as e:
+        #     print(e.message)
 
     return func.HttpResponse(f"Sent")
