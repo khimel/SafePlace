@@ -8,7 +8,7 @@ import json
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     
-    tableService = TableService(account_name='sosstor', account_key='cus0jXl35Wf9bAqyTYLqtBqtTywQIMoN3tyi3VqMahE+k1EnG9KO8lah1T/8crBTP3IWP6BsdPvpRD5O8TWvNQ==')
+    tableService = TableService(account_name='sosstor', account_key='#')
 
     counterEntity = dict(tableService.get_entity("users", "PKuser", "RKcounter"))
     counter = int(counterEntity["counter"])
