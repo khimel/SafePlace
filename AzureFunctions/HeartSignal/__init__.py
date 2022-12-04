@@ -11,7 +11,7 @@ from sendgrid.helpers.mail import Mail
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    tableService = TableService(account_name='sosstor', account_key='cus0jXl35Wf9bAqyTYLqtBqtTywQIMoN3tyi3VqMahE+k1EnG9KO8lah1T/8crBTP3IWP6BsdPvpRD5O8TWvNQ==')
+    tableService = TableService(account_name='sosstor', account_key='#')
     req_body = req.get_json() ## req_body has username
     usernameJson = json.loads(str(req_body).replace("'","\""))
     username_given = usernameJson['username']
@@ -29,7 +29,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     value = f"Hey Can you please check on {username_given}?"
     for c in foundContacts:
         message = Mail(
-            from_email='khmhamad1999@gmail.com',
+            from_email='#',
             to_emails=c["email"],
             subject='SOS',
             html_content=f'Hey, Can you please check on {name_given}? Try calling on: {phone_given}')
